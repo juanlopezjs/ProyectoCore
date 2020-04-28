@@ -1,0 +1,14 @@
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Aplicacion.deps.json
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Aplicacion.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Aplicacion.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Dominio.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Persistencia.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Dominio.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netcoreapp3.1/Persistencia.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.csprojAssemblyReference.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.csproj.CoreCompileInputs.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.AssemblyInfoInputs.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.AssemblyInfo.cs
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.csproj.CopyComplete
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netcoreapp3.1/Aplicacion.pdb

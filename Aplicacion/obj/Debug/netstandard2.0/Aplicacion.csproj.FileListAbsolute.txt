@@ -1,0 +1,14 @@
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Aplicacion.deps.json
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Aplicacion.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Aplicacion.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Dominio.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Persistencia.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Dominio.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/bin/Debug/netstandard2.0/Persistencia.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.csprojAssemblyReference.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.csproj.CoreCompileInputs.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.AssemblyInfoInputs.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.AssemblyInfo.cs
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.csproj.CopyComplete
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Aplicacion/obj/Debug/netstandard2.0/Aplicacion.pdb

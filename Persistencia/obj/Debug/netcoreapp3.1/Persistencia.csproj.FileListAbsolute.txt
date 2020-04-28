@@ -1,0 +1,15 @@
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Persistencia.deps.json
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Persistencia.runtimeconfig.json
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Persistencia.runtimeconfig.dev.json
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Persistencia.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Persistencia.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Dominio.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/bin/Debug/netcoreapp3.1/Dominio.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.csprojAssemblyReference.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.csproj.CoreCompileInputs.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.AssemblyInfoInputs.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.AssemblyInfo.cs
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.csproj.CopyComplete
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/obj/Debug/netcoreapp3.1/Persistencia.genruntimeconfig.cache
