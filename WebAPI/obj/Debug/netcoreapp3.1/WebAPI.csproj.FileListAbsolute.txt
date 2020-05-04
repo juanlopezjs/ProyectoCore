@@ -67,3 +67,14 @@
 /Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/obj/Debug/netcoreapp3.1/WebAPI.dll
 /Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/obj/Debug/netcoreapp3.1/WebAPI.pdb
 /Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/obj/Debug/netcoreapp3.1/WebAPI.genruntimeconfig.cache
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Seguridad.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Seguridad.pdb
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll

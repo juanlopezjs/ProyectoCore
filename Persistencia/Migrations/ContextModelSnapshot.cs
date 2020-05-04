@@ -31,10 +31,7 @@ namespace Persistencia.Migrations
                     b.Property<string>("ComentarioTexto")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CursoId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid?>("CursoId1")
+                    b.Property<Guid>("CursoId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Puntaje")
@@ -42,7 +39,7 @@ namespace Persistencia.Migrations
 
                     b.HasKey("ComentarioId");
 
-                    b.HasIndex("CursoId1");
+                    b.HasIndex("CursoId");
 
                     b.ToTable("Comentario");
                 });
@@ -72,20 +69,15 @@ namespace Persistencia.Migrations
 
             modelBuilder.Entity("Dominio.CursoInstructor", b =>
                 {
-                    b.Property<int>("InstructorId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("CursoId")
+                    b.Property<Guid>("InstructorId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("InstructorId1")
+                    b.Property<Guid>("CursoId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("InstructorId", "CursoId");
 
                     b.HasIndex("CursoId");
-
-                    b.HasIndex("InstructorId1");
 
                     b.ToTable("CursoInstructor");
                 });
@@ -195,7 +187,9 @@ namespace Persistencia.Migrations
                 {
                     b.HasOne("Dominio.Curso", "Curso")
                         .WithMany("Comentario")
-                        .HasForeignKey("CursoId1");
+                        .HasForeignKey("CursoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Dominio.CursoInstructor", b =>
@@ -208,7 +202,9 @@ namespace Persistencia.Migrations
 
                     b.HasOne("Dominio.Instructor", "Instructor")
                         .WithMany("CursoInstructor")
-                        .HasForeignKey("InstructorId1");
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Dominio.Precio", b =>

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Dominio;
@@ -15,6 +16,10 @@ namespace Aplicacion.Cursos
             public string Descripcion {get; set;}
             public DateTime FechaPublicacion {get; set;}
             //public byte[] FotoPortada {get; set;}
+
+            public List<Guid> ListaInstructor {get; set;}
+            public decimal Precio {get; set;}
+            public decimal Promocion {get; set;}
         }
 
         public class EjecutaValidacion : AbstractValidator<Ejecuta>{
@@ -36,12 +41,33 @@ namespace Aplicacion.Cursos
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
                 var curso = new Curso{
+                    CursoId = Guid.NewGuid(),
                     Titulo = request.Titulo,
                     Descripcion = request.Descripcion,
                     FechaPublicacion = request.FechaPublicacion
                 };
                 
                  await _context.Curso.AddAsync(curso);
+
+                if(request.ListaInstructor != null){
+                    foreach(var id in request.ListaInstructor){
+                        var cursoInstructor = new CursoInstructor{
+                            CursoId = curso.CursoId,
+                            InstructorId = id
+                        };
+                        _context.CursoInstructor.Add(cursoInstructor);
+                    }
+                }
+
+                var precio = new Precio {
+                    CursoId = curso.CursoId,
+                    PrecioActual = request.Precio,
+                    Promocion = request.Promocion,
+                    PrecioId = Guid.NewGuid()
+                };
+                
+                _context.Precio.Add(precio);
+
                  var valor = await _context.SaveChangesAsync();
 
                  return valor > 0 ? Unit.Value : throw new Exception("Error al insertar el curso.");

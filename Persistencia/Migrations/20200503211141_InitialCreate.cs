@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistencia.Migrations
 {
-    public partial class IdentityCoreInicial : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -71,18 +71,17 @@ namespace Persistencia.Migrations
                     Alumno = table.Column<string>(nullable: true),
                     Puntaje = table.Column<int>(nullable: false),
                     ComentarioTexto = table.Column<string>(nullable: true),
-                    CursoId = table.Column<int>(nullable: false),
-                    CursoId1 = table.Column<Guid>(nullable: true)
+                    CursoId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Comentario", x => x.ComentarioId);
                     table.ForeignKey(
-                        name: "FK_Comentario_Curso_CursoId1",
-                        column: x => x.CursoId1,
+                        name: "FK_Comentario_Curso_CursoId",
+                        column: x => x.CursoId,
                         principalTable: "Curso",
                         principalColumn: "CursoId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -110,8 +109,7 @@ namespace Persistencia.Migrations
                 columns: table => new
                 {
                     CursoId = table.Column<Guid>(nullable: false),
-                    InstructorId = table.Column<int>(nullable: false),
-                    InstructorId1 = table.Column<Guid>(nullable: true)
+                    InstructorId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -123,27 +121,22 @@ namespace Persistencia.Migrations
                         principalColumn: "CursoId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CursoInstructor_Instructor_InstructorId1",
-                        column: x => x.InstructorId1,
+                        name: "FK_CursoInstructor_Instructor_InstructorId",
+                        column: x => x.InstructorId,
                         principalTable: "Instructor",
                         principalColumn: "InstructorId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comentario_CursoId1",
+                name: "IX_Comentario_CursoId",
                 table: "Comentario",
-                column: "CursoId1");
+                column: "CursoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_CursoInstructor_CursoId",
                 table: "CursoInstructor",
                 column: "CursoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_CursoInstructor_InstructorId1",
-                table: "CursoInstructor",
-                column: "InstructorId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Precio_CursoId",

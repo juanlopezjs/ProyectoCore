@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Aplicacion.Cursos;
 using Dominio;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -13,7 +15,7 @@ namespace WebAPI.Controllers
     {
     
         [HttpGet]
-        public async Task<ActionResult<List<Curso>>> Get(){
+        public async Task<ActionResult<List<CursoDto>>> Get(){
             try
             {
                 return await Mediator.Send(new Consulta.ListaCursos());
@@ -26,7 +28,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Curso>> Detalle(int id)
+        public async Task<ActionResult<CursoDto>> Detalle(Guid id)
         {
             try
             {
@@ -55,7 +57,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<Unit>> Put(int id, Editar.Ejecuta curso)
+        public async Task<ActionResult<Unit>> Put(Guid id, Editar.Ejecuta curso)
         {
             try
             {
@@ -71,7 +73,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Unit>> Delete(int id)
+        public async Task<ActionResult<Unit>> Delete(Guid id)
         {
             try
             {

@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
@@ -6,12 +7,13 @@ using Dominio;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Aplicacion.Contratos;
 
 namespace Aplicacion.Seguridad
 {
     public class Login
     {
-        public class Ejecuta : IRequest<Usuario>{
+        public class Ejecuta : IRequest<UsuarioData>{
             public string Email {get; set;}
             public string Password {get; set;}
         }
@@ -23,15 +25,17 @@ namespace Aplicacion.Seguridad
             }
         }
 
-        public class Manejador : IRequestHandler<Ejecuta, Usuario>
+        public class Manejador : IRequestHandler<Ejecuta, UsuarioData>
         {
             private readonly UserManager<Usuario> _userManager;
             private readonly SignInManager<Usuario> _signInManager;
-            public Manejador(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager){
+            private readonly IJwtGenerador _jwtGenerador;
+            public Manejador(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager, IJwtGenerador jwtGenerador ){
                 _userManager = userManager;
                 _signInManager = signInManager;
+                _jwtGenerador = jwtGenerador;
             }
-            public async Task<Usuario> Handle(Ejecuta request, CancellationToken cancellationToken)
+            public async Task<UsuarioData> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
                 var usuario = await _userManager.FindByEmailAsync(request.Email);
                 if(usuario == null){
@@ -40,7 +44,13 @@ namespace Aplicacion.Seguridad
 
                 var resultado = await _signInManager.CheckPasswordSignInAsync(usuario, request.Password, false);
                 if(resultado.Succeeded){
-                    return usuario;
+                    return new UsuarioData {
+                        NombreCompleto = usuario.NombreCompleto,
+                        Token = _jwtGenerador.CrearToken(usuario),
+                        Username = usuario.UserName,
+                        Email = usuario.Email,
+                        Imagen = null
+                    };
                 }
 
                 throw new ManejadorExcepcion(HttpStatusCode.Unauthorized); 
