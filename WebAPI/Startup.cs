@@ -29,6 +29,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Seguridad;
 using AutoMapper;
+using Persistencia.DapperConexion;
 
 namespace WebAPI
 {
@@ -47,6 +48,9 @@ namespace WebAPI
             services.AddDbContext<Context>(opt => {
                 opt.UseSqlServer(Configuration.GetConnectionString("Db"));
             });
+
+            services.Configure<ConexionConfiguracion>(Configuration.GetSection("Db"));
+
             services.AddMediatR(typeof(Consulta.ListaCursos).Assembly);
             
             services.AddControllers(opt => {
