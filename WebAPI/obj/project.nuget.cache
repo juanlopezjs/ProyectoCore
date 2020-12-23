@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h3OadunHuDljOnsArLyStUaC5PnHiwirD1md/T4HlzzQIwyOPsAgRJgNaG/P18KhOYSeeLnOYaMcbS/cfctOTQ==",
+  "dgSpecHash": "XFyoO/gXMXOo8BTvibTHQpoInzbbjQpAETU1baDepVLqlqhW+X4L774gu/54MIC6Pwe/nlOgUZ1KpCA0F9OcTw==",
   "success": true,
   "projectFilePath": "/Users/juanmanuellopez/Projects/ProyectoCore/WebAPI/WebAPI.csproj",
   "expectedPackageFiles": [
@@ -113,7 +113,8 @@
     "/Users/juanmanuellopez/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/juanmanuellopez/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/juanmanuellopez/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/juanmanuellopez/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/Users/juanmanuellopez/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/Users/juanmanuellopez/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
   ],
   "logs": []
 }

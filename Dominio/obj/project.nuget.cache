@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U/x+r78g7xW0e3LLRgVcYe1a8cox1874jk0vBdxMR53fgVBtrFP96qtQ1a5/T9oUcV+L0Q5mKd1Yefyu1DLTAg==",
+  "dgSpecHash": "bHksPnDZHqmlONWIT144rQM3vTsg3lnOKPUjKiTja4cOv30ohnuOJ/35M5D9Vg44Vh9VRq21rNE99cZ/qPbfuA==",
   "success": true,
   "projectFilePath": "/Users/juanmanuellopez/Projects/ProyectoCore/Dominio/Dominio.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,8 @@
     "/Users/juanmanuellopez/.nuget/packages/microsoft.extensions.primitives/3.1.2/microsoft.extensions.primitives.3.1.2.nupkg.sha512",
     "/Users/juanmanuellopez/.nuget/packages/system.collections.immutable/1.7.0/system.collections.immutable.1.7.0.nupkg.sha512",
     "/Users/juanmanuellopez/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "/Users/juanmanuellopez/.nuget/packages/system.diagnostics.diagnosticsource/4.7.0/system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
+    "/Users/juanmanuellopez/.nuget/packages/system.diagnostics.diagnosticsource/4.7.0/system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+    "/Users/juanmanuellopez/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
   ],
   "logs": []
 }

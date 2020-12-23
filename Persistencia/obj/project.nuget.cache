@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "d7NxruCepECLlmIO6QVj/cfjcT26xrVDDdmWowxADrV2fGnxjJWmKJF3ATxRXNjLJZlrIbwhGWAijiRANS3fxg==",
+  "dgSpecHash": "SDAHJoEkbEl2l2nl4ivXUUYBLizTw/6ubTDy3Eger0sGy/REU4rHslVpaxpetSmWRNNL+m+QB5SIbiqV444IKA==",
   "success": true,
   "projectFilePath": "/Users/juanmanuellopez/Projects/ProyectoCore/Persistencia/Persistencia.csproj",
   "expectedPackageFiles": [
@@ -97,7 +97,8 @@
     "/Users/juanmanuellopez/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/juanmanuellopez/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/juanmanuellopez/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/juanmanuellopez/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/Users/juanmanuellopez/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/Users/juanmanuellopez/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
   ],
   "logs": []
 }
